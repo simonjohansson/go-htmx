@@ -1,0 +1,19 @@
+{{define "index"}}
+<html lang="en">
+<head>
+    <title>Howdy</title>
+    <meta charset="UTF-8"/>
+    <script src="/static/htmx.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body hx-boost="true">
+<section class="flex flex-col h-screen justify-center items-center">
+    <h1>
+        Hi {{.Name}}!
+    </h1>
+    {{template "now" .}}
+    {{template "uuid" .}}
+</section>
+</body>
+</html>
+{{end}}

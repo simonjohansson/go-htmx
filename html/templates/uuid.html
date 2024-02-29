@@ -1,0 +1,10 @@
+{{define "uuid"}}
+<div id="uuid">
+    {{.UUID}}
+    <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full"
+            hx-get="/uuid"
+            hx-target="#uuid"
+            hx-swap="outerHTML">Refresh</button>
+</div>
+{{end}}

@@ -1,0 +1,10 @@
+{{define "now"}}
+<div id="now">
+    {{.Now}}
+    <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full"
+            hx-get="/now"
+            hx-target="#now"
+            hx-swap="outerHTML">Refresh</button>
+</div>
+{{end}}
